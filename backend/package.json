@@ -1,0 +1,57 @@
+{
+  "name": "trendwise-backend",
+  "version": "1.0.0",
+  "description": "TrendWise Backend API - Trend fetching and article generation service",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "fetch-trends": "node src/scripts/fetchTrends.js",
+    "generate-articles": "node src/scripts/generateArticles.js",
+    "seed": "node src/scripts/seedDatabase.js"
+  },
+  "keywords": [
+    "blog",
+    "trends",
+    "seo",
+    "ai",
+    "openai",
+    "mongodb",
+    "express"
+  ],
+  "author": "TrendWise Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4",
+    "openai": "^4.20.1",
+    "google-trends-api": "^4.9.2",
+    "puppeteer": "^21.5.2",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.2",
+    "slugify": "^1.6.6",
+    "node-cron": "^3.0.3",
+    "winston": "^3.11.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "@types/node": "^20.10.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
